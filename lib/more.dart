@@ -21,6 +21,30 @@ class _MoreState extends State<More> {
           icon: const Icon(Icons.arrow_back_ios_new_outlined),
         ),
       ),
+      body: Column(
+        children: [
+          Image.asset('images/oaknet.png'),
+          const SizedBox(
+            height: 10,
+          ),
+          const Divider(
+            color: Colors.black,
+          ),
+          Container(
+            margin: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
+            color: Colors.blueGrey,
+            child: const Center(
+              child: Text(
+                'New page',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
