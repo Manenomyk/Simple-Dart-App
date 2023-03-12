@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'homepage.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -33,6 +33,8 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: const Text('Home page'),
       ),
+
+      body: const Homepage(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           debugPrint('hey there been pressed');
