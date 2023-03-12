@@ -43,6 +43,24 @@ class _MoreState extends State<More> {
               ),
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              debugPrint('clicked Elevated button');
+            },
+            child: const Text('Elevated button'),
+          ),
+           OutlinedButton(
+            onPressed: () {
+              debugPrint('clicked Outlined button');
+            },
+            child: const Text('Outlined button'),
+          ),
+           TextButton(
+            onPressed: () {
+              debugPrint('clicked Text button');
+            },
+            child: const Text('Text button'),
+          ),
         ],
       ),
     );
