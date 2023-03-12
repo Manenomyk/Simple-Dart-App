@@ -49,18 +49,30 @@ class _MoreState extends State<More> {
             },
             child: const Text('Elevated button'),
           ),
-           OutlinedButton(
+          OutlinedButton(
             onPressed: () {
               debugPrint('clicked Outlined button');
             },
             child: const Text('Outlined button'),
           ),
-           TextButton(
+          TextButton(
             onPressed: () {
               debugPrint('clicked Text button');
             },
             child: const Text('Text button'),
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: const [
+              Icon(
+                Icons.local_fire_department_outlined, color: Colors.orange,
+              ),
+              Text('Hey and welcome'),
+              Icon(
+                Icons.local_fire_department_outlined,
+              ),
+            ],
+          )
         ],
       ),
     );
