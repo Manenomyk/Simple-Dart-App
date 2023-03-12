@@ -61,17 +61,24 @@ class _MoreState extends State<More> {
             },
             child: const Text('Text button'),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: const [
-              Icon(
-                Icons.local_fire_department_outlined, color: Colors.orange,
-              ),
-              Text('Hey and welcome'),
-              Icon(
-                Icons.local_fire_department_outlined,
-              ),
-            ],
+          GestureDetector(
+            behavior: HitTestBehavior.opaque,
+            onTap: () {
+              debugPrint('row clicked');
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const [
+                Icon(
+                  Icons.local_fire_department_outlined,
+                  color: Colors.orange,
+                ),
+                Text('Hey and welcome'),
+                Icon(
+                  Icons.local_fire_department_outlined,
+                ),
+              ],
+            ),
           )
         ],
       ),
